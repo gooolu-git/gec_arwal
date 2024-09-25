@@ -9,6 +9,17 @@ window.addEventListener('scroll', function () {
         navbar.style.backgroundColor = 'transparent';
     }
 });
+// script.js
+
+// Run this function when the window has finished loading
+window.onload = function () {
+    // Hide the loading screen
+    document.getElementById('loading-screen').style.display = 'none';
+
+    // Show the content
+    document.getElementById('content').style.display = 'block';
+};
+
 let Signup = document.getElementById("Sign-up")
 let Signin = document.getElementById("Sign-in")
 let tiger = document.getElementById('tiger');
@@ -16,24 +27,24 @@ let cross = document.getElementById('cross');
 let body = document.querySelector('body')
 let secnav = document.getElementById('secnav')
 
-Signin.addEventListener('click',function (){
+Signin.addEventListener('click', function () {
     alert('sorry we are working on this feature')
 })
-Signup.addEventListener('click',function (){
+Signup.addEventListener('click', function () {
     alert('sorry we are working on this feature')
 })
 // tiger.addEventListener('click',function(){
 //     secnav.style.display ='inline-block'
 // })
-cross.addEventListener('click', function(){
-    secnav.style.display='none'
+cross.addEventListener('click', function () {
+    secnav.style.display = 'none'
 });
 
 
-tiger.addEventListener('click',function(){
-    secnav.style.display='flex'
+tiger.addEventListener('click', function () {
+    secnav.style.display = 'flex'
 })
 let sal = new Date().getFullYear()
 
 let year = document.getElementById('year');
-year.innerHTML=sal
+year.innerHTML = sal
