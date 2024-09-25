@@ -9,16 +9,7 @@ window.addEventListener('scroll', function () {
         navbar.style.backgroundColor = 'transparent';
     }
 });
-// script.js
 
-// Run this function when the window has finished loading
-window.onload = function () {
-    // Hide the loading screen
-    document.getElementById('loading-screen').style.display = 'none';
-
-    // Show the content
-    document.getElementById('content').style.display = 'block';
-};
 
 let Signup = document.getElementById("Sign-up")
 let Signin = document.getElementById("Sign-in")
